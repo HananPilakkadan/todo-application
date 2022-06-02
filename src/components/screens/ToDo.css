@@ -132,6 +132,24 @@ ul, ol {
     }
 }
 @media screen and (max-width:640px){
+    .container .submit form{
+        flex-direction: column;
+    }
+    .container .submit form input{
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    .container .submit form button {
+        border-radius: 10px;
+        margin-top: 16px;
+    }
+    .container .content ul li h3 {
+        font-size: 20px;
+        padding: 6px 12px;
+    }
+    .container .done ul li .actions img {
+        margin-right: 5px;
+    }
     .container {
         width: 85%;
     }
@@ -143,16 +161,9 @@ ul, ol {
     }
 }
 @media screen and (max-width:360px){
-    .container .submit form{
-        flex-direction: column;
-    }
-    .container .submit form input{
-        border-radius: 10px;
-        font-size: 16px;
-    }
+    
     .container .submit form button {
-        border-radius: 10px;
-        margin-top: 16px;
+        
         font-size: 16px;
     }
     .container .content ul{
