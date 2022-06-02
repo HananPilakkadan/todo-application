@@ -28,15 +28,15 @@ function ToDo() {
 
   const addList = (e) => {
     e.preventDefault();
-    
+
     let newList = {
-        id: count + 1,
-        items: inputValue,
+      id: count + 1,
+      items: inputValue,
     };
-    setData([...data, newList]);
-
-    setCount((prev)=> (prev+1));
-
+    if (inputValue !== "") {
+      setData([...data, newList]);
+    }
+    setCount((prev) => prev + 1);
     setInputValue("");
   };
 
@@ -63,14 +63,12 @@ function ToDo() {
     setCompletedList(doneItemDelete);
   };
 
-  useEffect(()=>(
-    setCount(parseInt(data.length + completedList.length))
-  ),[])
+  useEffect(() => setCount(parseInt(data.length + completedList.length)), []);
 
   return (
     <>
       <div className="container">
-        <h1>My ToDo</h1>
+        <h1>ToDo</h1>
         <div className="submit">
           <form action="#">
             <input
@@ -87,7 +85,7 @@ function ToDo() {
           </form>
         </div>
         <div className="content">
-          <h2>Upcoming</h2>
+          <h2>To Be Done</h2>
           <ul>
             {data.map((items) => (
               <>
@@ -109,7 +107,7 @@ function ToDo() {
           </ul>
         </div>
         <div className="content done">
-          <h2>Done</h2>
+          <h2>Completed</h2>
           <ul>
             {completedList.map((item) => (
               <>

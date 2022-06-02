@@ -14,11 +14,15 @@ ul, ol {
     padding: 20px 30px;
     margin: 20px auto;
     border-radius: 25px;
+    background: linear-gradient(to top,#000000ea, #000000e7 ),url(../assets/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .container h1 {
     text-align: center;
     margin-bottom: 30px;
-    color: #99a8bb;
+    color: #007b65;
     letter-spacing: 3px;
 }
 .container .content h2 {
@@ -37,7 +41,7 @@ ul, ol {
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    background: #99a8bb;
+    background: #007b65;
     padding: 10px 16px;
     border-radius: 18px;
     transition: .3s ease;
@@ -98,13 +102,13 @@ ul, ol {
     border-bottom-right-radius: 10px;
     border: 2px solid transparent;
     font-size: 20px;
-    background: #99a8bb;
+    background: #007b65;
     color: #e1e1e1;
     transition: .3s ease;
     cursor: pointer;
 }
 .container .submit form button:hover{
-    background: #0a2c4b;
+    background: #012e25;
     border: 2px solid #128170;
 }
 .container .done ul li label{
@@ -121,4 +125,37 @@ ul, ol {
 }
 .container .done ul li .actions img:hover {
     transform: rotate(360deg);
+}
+@media screen and (max-width:768px){
+    .container .content ul {
+        width: 80%;
+    }
+}
+@media screen and (max-width:640px){
+    .container {
+        width: 85%;
+    }
+    .container h1{
+        font-size: 28px;
+    }
+    .container .submit form input ,.container .submit form button,.container .content ul li label{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:360px){
+    .container .submit form{
+        flex-direction: column;
+    }
+    .container .submit form input{
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    .container .submit form button {
+        border-radius: 10px;
+        margin-top: 16px;
+        font-size: 16px;
+    }
+    .container .content ul{
+        width: 100%;
+    }
 }
