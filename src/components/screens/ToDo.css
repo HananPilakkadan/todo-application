@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ul, ol {
+    list-style: none;
+}
+.container {
+    width: 70%;
+    background: #124c81;
+    padding: 20px 30px;
+    margin: 20px auto;
+    border-radius: 25px;
+}
+.container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #99a8bb;
+    letter-spacing: 3px;
+}
+.container .content h2 {
+    margin-bottom: 26px;
+    text-align: center;
+    color: #e1e1e1;
+    letter-spacing: 2px;
+}
+.container .content ul {
+    width: 60%;
+    margin: 0 auto;
+}
+.container .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background: #99a8bb;
+    padding: 10px 16px;
+    border-radius: 18px;
+    transition: .3s ease;
+}
+.container .content ul li:hover {
+    transform: scale(1.03);
+}
+.container .content ul li input {
+    width: 20px;
+    height: 20px;
+    margin-right: 18px;
+    accent-color: #124c81;
+}
+.container .content ul li label {
+    font-size: 26px;
+    text-transform: capitalize;
+    color: #e1e1e1;
+}
+.container .content ul li h3 {
+    font-size: 28px;
+    color: #e1e1e1;
+    transition: .3s ease;
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+.container .content ul li h3:hover{
+    color: #d10000;
+    transform: scale(1.1);
+    border: 1px solid #d10000;
+}
+.container .submit form {
+    display: flex;
+    align-items: center;
+    
+}
+.container .submit {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.container .submit form input {
+    padding: 18px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 2px solid transparent;
+    background: #e1e1e1;
+    color: #124c81;
+    font-size: 20px;
+}
+.container .submit form input:focus{
+    outline: none;
+    border: 2px solid #128170;
+}
+.container .submit form button {
+    padding: 18px 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid transparent;
+    font-size: 20px;
+    background: #99a8bb;
+    color: #e1e1e1;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.container .submit form button:hover{
+    background: #0a2c4b;
+    border: 2px solid #128170;
+}
+.container .done ul li label{
+    text-decoration:line-through ;
+    color: #2a2a2a;
+}
+.container .done ul li .actions{
+    display: flex;
+    align-items: center;
+}
+.container .done ul li .actions img {
+    margin-right: 16px;
+    transition: .3s ease;
+}
+.container .done ul li .actions img:hover {
+    transform: rotate(360deg);
+}
